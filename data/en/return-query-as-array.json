@@ -1,0 +1,10 @@
+{
+    "title": "Return query as array",
+    "description": "Sometimes you may find it easier to manipulate arrays than queries.",
+    "body": "",
+    "snippet": {
+        "type": "script",
+        "source": "var queryOptions = {\r\n\tdatasource: \"appMain\",\r\n\treturntype: \"array\"\r\n};\r\nvar data = queryExecute( \"SELECT * FROM users\", {}, queryOptions );"
+    },
+    "tags": [ "queryexecute", "cfquery" ]
+}

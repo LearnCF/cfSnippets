@@ -1,0 +1,7 @@
+# Editor files
+*.swp
+*.swo
+.vscode
+
+# OS junk
+.DS_Store

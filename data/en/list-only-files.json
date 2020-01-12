@@ -1,0 +1,10 @@
+{
+	"title": "List only files in a given directory",
+	"description": "Using the <code>type</code> argument in <code>directoryList()</code>, you can specify to retrieve only the files within a directory, thus eliminating all folders from the result.",
+	"body": "",
+	"snippet": {
+		"type": "script",
+		"source": "directoryList(\r\n\tpath = expandPath( \"./app/uploads/images\" ),\r\n\ttype = \"file\"\r\n);"
+	},
+	"tags": [ "directorylist", "files" ]
+}

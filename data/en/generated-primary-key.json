@@ -1,0 +1,10 @@
+{
+	"title": "Get Generated Primary Key from an INSERT statement",
+	"description": "If you use MySQL to generate database record ids for you (e.g. a PRIMARY KEY created via an autonumber field or `UUID()` call), use the `result` option to specify a variable name which will contain the result of the query - including a `generatedKey` field for retrieving the primary key of the new record.",
+	"body": "",
+	"snippet": {
+		"type": "script",
+		"source": "var queryOptions = {\r\n\tresult: \"newUser\"\r\n};\r\nvar data = queryExecute(\r\n\t\"INSERT INTO users (username, password)\r\n\tVALUES ( 'mike.born', UUID() )\",\r\n\t{},\r\n\tqueryOptions\r\n);\r\nwriteOutput( \"New user id: #newUser.generatedKey#\" );"
+	},
+	"tags": [ "queryexecute", "cfquery" ]
+}

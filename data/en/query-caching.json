@@ -1,0 +1,10 @@
+{
+	"title": "Configure Query Caching",
+	"description": "Use the `cachedWithin` or `cachedAfter` query options to cache a query for or after a specified timespan. The following query will be cached and reused for up to 6 hours.",
+	"body": "",
+	"snippet": {
+		"type": "script",
+		"source": "var sql = \"SELECT * FROM users\";\r\nvar queryOptions = {\r\n\tcachedWithin: createTimespan( 0, 6, 0, 0 )\r\n};\r\nvar data = queryExecute( sql, params, queryOptions );"
+	},
+	"tags": [ "queryexecute", "cfquery", "caching" ]
+}
