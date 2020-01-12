@@ -1,5 +1,5 @@
 {
-	"title": "Convert a given datetime object to MSSQL Format",
+	"title": "Convert a given datetime object to an MS SQL Server-acceptable format",
 	"description": "For storing a datetime object (including UTC offset) in MSSQL, use <code>dateTimeFormat()</code> with a full date/time mask. Note that in Lucee you'll need to use the <code>varchar</code> data type to work around a Lucee bug with the DateTimeOffset field - see <a href=\"https://michaelborn.me/entry/storing-and-using-datetimeoffsets-in-lucee\">Michael Born's blog post</a> for more info.",
 	"snippet": {
 		"type": "script",

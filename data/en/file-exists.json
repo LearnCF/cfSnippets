@@ -1,0 +1,9 @@
+{
+	"title": "Use FileExists() for confirming the existence of a file",
+	"description": "You should probably use <code>fileExists()</code> on a file path before attempting to read, delete, or work with any file in any way - <strong>especially</strong> if that file path is user-provided.",
+	"snippet": {
+		"type": "script",
+		"source": "if ( fileExists( filepath ) ){\r\n\tvar data = fileRead( filepath );\r\n\t// Import JSON data into ElasticSearch...\r\n}"
+	},
+	"tags": []
+}

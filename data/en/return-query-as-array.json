@@ -1,9 +1,9 @@
 {
     "title": "Return query as array",
-    "description": "Sometimes you may find it easier to manipulate arrays than queries.",
+    "description": "You may find manipulating an array object easier than manipulating a query object. Using the <code>returntype</code> option, you can ask <code>queryExecute()</code> to return an array for functional-style processing on that query data.",
     "snippet": {
         "type": "script",
-        "source": "var queryOptions = {\r\n\tdatasource: \"appMain\",\r\n\treturntype: \"array\"\r\n};\r\nvar data = queryExecute( \"SELECT * FROM users\", {}, queryOptions );"
+        "source": "var usernames = queryExecute( \r\n\t\"SELECT id,name FROM users\",\r\n\t{},\r\n\t{ \"returntype\": \"array\" }\r\n);\r\n// Now we can use closures on the result\r\nvar newUsernames = usernames\r\n\t.filter( user => user.name CONTAINS \"Born\" )\r\n\t.each( user => user.name.replace( \"Born\", \"Bourne\" );"
     },
     "tags": [ "queryexecute", "cfquery" ]
 }
