@@ -1,9 +1,9 @@
 {
 	"title": "Clear log files with fileDelete()",
-	"description": "Cleanup all .log files from your logs directory using a one-two combo or <code>directoryList()</code> and <code>fileDelete()</code>.",
+	"description": "Cleanup all .log files from your logs directory using a one-two combo of <code>directoryList()</code> and <code>fileDelete()</code>.",
 	"snippet": {
 		"type": "script",
-		"source": "var logDir = expandPath( \"/logs/\" );\r\nvar logs = directoryList(\r\n\tpath = logDir,\r\n\tlistInfo = \"name\",\r\n\tfilter = \"*.log\",\r\n\ttype = \"file\",\r\n\trecurse = \"false\"\r\n);\r\nfor( var log in logs ){\r\n\tfileDelete( logDir & log );\r\n}"
+		"source": "var logDir = expandPath( \"/logs/\" );\r\nvar logs = directoryList(\r\n\tpath = logDir,\r\n\tlistInfo = \"name\",\r\n\tfilter = \"*.log\",\r\n\ttype = \"file\",\r\n\trecurse = \"false\"\r\n);\r\nfor( var log in logs ){\r\n\tvar fullPath = logDir & log ;\r\n\tif( fileExists( fullPath ) ){\r\n\t\tfileDelete( fullPath );\r\n\t}\r\n}"
 	},
 	"tags": ["fileDelete","expandPath","directoryList"]
 }
