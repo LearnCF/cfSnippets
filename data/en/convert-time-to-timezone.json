@@ -1,11 +1,9 @@
 {
 	"title": "Convert a given datetime object to a known timezone",
-	"description": "IF you know the original timezone of the date object you are working with (often the timezone of the server it was generated on), you can convert a time to a different timezone using dateTimeFormat().",
-	"body": "",
+	"description": "Assuming you know the original timezone of the date object you are working with (often the timezone of the server it was generated on), you can convert a time to a different timezone using dateTimeFormat().",
 	"snippet": {
 		"type": "script",
-		"source": "dateTimeFormat(myDateTimeObject, \"HH:nn:ss XXX\", \"America/Chicago\")"
+		"source": "var createdDate = now();\r\n// Prints 09:58:05 -05:00\r\nwriteOutput( dateTimeFormat( createdDate, \"HH:nn:ss XXX\") );\r\n// Prints 10:58:05 -05:00\r\nwriteOutput( dateTimeFormat( createdDate, \"HH:nn:ss XXX\", \"America/Chicago\") );"
 	},
-	"tags": [ ]
+	"tags": [ "datetime", "datetimeformat", "now", "timezone" ]
 }
-

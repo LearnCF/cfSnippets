@@ -1,0 +1,8 @@
+{
+	"title": "Using the Switch construct",
+	"description": "Using <code>switch</code> or <code>cfswitch</cfswitch> helps you write cleaner logic statements if you are altering behavior based on the value of a single variable.",
+	"snippet": {
+		"type": "script",
+		"source": "// null-safe our order by argument.\r\nvar orderBy = arguments.order ?: \"\";\r\n\r\nswitch( orderBy ) {\r\n\tcase \"dateCreated\":\r\n\tcase \"title\":\r\n\t\t// do nothing, these column names are OK to order by.\r\n\tbreak;\r\n\tdefault: {\r\n\t\t// set a default if the order column is none of the above.\r\n\t\t// prevents SQLi vulnerabilities by ensuring we can only use a set of values for the order by parameter.\r\n\t\tvar orderBy = \"dateCreated\";\r\n\t}\r\n}"
+	},
+	"tags": [ "conditional", "construct", "elvis", "operator" ]

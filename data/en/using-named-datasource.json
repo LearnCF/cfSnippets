@@ -1,10 +1,9 @@
 {
 	"title": "Select query using named datasource",
 	"description": "If you do not have a default datasource configured, you'll need to use this variant to specify which datasource to use.",
-	"body": "",
 	"snippet": {
 		"type": "script",
-		"source": "var queryOptions = { datasource: \"appMain\" };\r\nvar queryParams = {};\r\nvar data = queryExecute(\r\n\t\"SELECT * FROM users\", queryParams, queryOptions\r\n);"
+		"source": "var queryOptions = { datasource: \"appMain\" };\r\nvar data = queryExecute(\r\n\t\"SELECT * FROM users\", {}, queryOptions\r\n);"
 	},
 	"tags": [ "queryexecute", "cfquery" ]
 }
