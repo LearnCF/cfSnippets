@@ -3,7 +3,7 @@
 	"description": "In CFML, you can pass all function arguments to a child function by using the <code>argumentCollection</code> parameter. This is really handy for calling a child service with many arguments, such as in logging, email or database operations.",
 	"snippet": {
 		"type": "script",
-		"source": "function sendEmail(\r\n\trequired string to,\r\n\trequired string from,\r\n\trequired string subject,\r\n\trequired string body\r\n) {\r\n\treturn mailService.send( argumentCollection = arguments );\r\n}"
+		"source": "function sendEmail(\r\n  required string to,\r\n  required string from,\r\n  required string subject,\r\n  required string body\r\n) {\r\n  return mailService.send( argumentCollection = arguments );\r\n}"
 	},
 	"cheatsheets": [ "function" ]
 }

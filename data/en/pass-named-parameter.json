@@ -3,7 +3,7 @@
 	"description": "Use parameters for all user-submitted data to protect against SQL injection.",
 	"snippet": {
 		"type": "script",
-		"source": "var params = {\r\n\tusername: { value: form.username, sqltype: \"varchar\" },\r\n\tpassword: { value: form.password, sqltype: \"varchar\" }\r\n};\r\nvar data = queryExecute(\r\n\t\"SELECT * FROM users WHERE username=:username AND password=:password\",\r\n\tparams\r\n);"
+		"source": "var params = {\r\n  username: { value: form.username, sqltype: \"varchar\" },\r\n  password: { value: form.password, sqltype: \"varchar\" }\r\n};\r\nvar data = queryExecute(\r\n  \"SELECT * FROM users WHERE username=:username AND password=:password\",\r\n  params\r\n);"
 	},
 	"cheatsheets": [ "queryexecute" ]
 }

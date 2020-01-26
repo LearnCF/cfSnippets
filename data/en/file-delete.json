@@ -3,7 +3,7 @@
 	"description": "Cleanup all <code>.log</code> files from your logs directory using a one-two combo of <code>directoryList()</code> and <code>fileDelete()</code>.",
 	"snippet": {
 		"type": "script",
-		"source": "var logDir = expandPath( \"/logs/\" );\r\nvar logs = directoryList(\r\n\tpath = logDir,\r\n\tlistInfo = \"name\",\r\n\tfilter = \"*.log\",\r\n\ttype = \"file\",\r\n\trecurse = \"false\"\r\n);\r\nfor( var log in logs ){\r\n\tvar fullPath = logDir & log ;\r\n\tif( fileExists( fullPath ) ){\r\n\t\tfileDelete( fullPath );\r\n\t}\r\n}"
+		"source": "var logDir = expandPath( \"/logs/\" );\r\nvar logs = directoryList(\r\n  path = logDir,\r\n  listInfo = \"name\",\r\n  filter = \"*.log\",\r\n  type = \"file\",\r\n  recurse = \"false\"\r\n);\r\nfor( var log in logs ){\r\n  var fullPath = logDir & log ;\r\n  if( fileExists( fullPath ) ){\r\n    fileDelete( fullPath );\r\n  }\r\n}"
 	},
 	"cheatsheets": [ "files" ]
 }

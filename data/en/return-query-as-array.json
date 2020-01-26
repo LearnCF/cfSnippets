@@ -3,7 +3,7 @@
     "description": "You may find manipulating an array object easier than manipulating a query object. Using the <code>returntype</code> option, you can ask <code>queryExecute()</code> to return an array for functional-style processing on that query data.",
     "snippet": {
         "type": "script",
-        "source": "var usernames = queryExecute( \r\n\t\"SELECT id,name FROM users\",\r\n\t{},\r\n\t{ \"returntype\": \"array\" }\r\n);\r\n// Now we can use closures on the result\r\nvar newUsernames = usernames\r\n\t.filter( user => user.name CONTAINS \"Born\" )\r\n\t.each( user => user.name.replace( \"Born\", \"Bourne\" );"
+        "source": "var usernames = queryExecute( \r\n  \"SELECT id,name FROM users\",\r\n  {},\r\n  { \"returntype\": \"array\" }\r\n);\r\n// Now we can use closures on the result\r\nvar newUsernames = usernames\r\n  .filter( user => user.name CONTAINS \"Born\" )\r\n  .each( user => user.name.replace( \"Born\", \"Bourne\" );"
     },
     "cheatsheets": [ "queryexecute" ]
 }

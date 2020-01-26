@@ -3,7 +3,7 @@
 	"description": "The ternary operator is great for single-line if statements. Be careful not to stick too much logic in a ternary - you can quickly end up with some ugly code if you try to do too much.",
 	"snippet": {
 		"type": "script",
-		"source": "function buildURL(\r\n\trequired string to,\r\n\tstring querystring = \"\"\r\n) {\r\n\tvar protocol = cgi.https == \"on\" ? \"https\" : \"http\";\r\n\tvar querystring = arguments.querystring > \"\" ? \"?#arguments.querystring#\";\r\n\tvar port = listContains( \"80,443\", cgi.server_port ) ? \"\" : \":#cgi.server_port#\";\r\n\tvar domain = cgi.server_name;\r\n\treturn \"#protocol#://#domain##port##arguments.to##querystring#\";\r\n}"
+		"source": "function buildURL(\r\n  required string to,\r\n  string querystring = \"\"\r\n) {\r\n  var protocol = cgi.https == \"on\" ? \"https\" : \"http\";\r\n  var querystring = arguments.querystring > \"\" ? \"?#arguments.querystring#\";\r\n  var port = listContains( \"80,443\", cgi.server_port ) ? \"\" : \":#cgi.server_port#\";\r\n  var domain = cgi.server_name;\r\n  return \"#protocol#://#domain##port##arguments.to##querystring#\";\r\n}"
 	},
 	"cheatsheets": [ "operator" ]
 }

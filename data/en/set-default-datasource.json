@@ -3,7 +3,7 @@
 	"description": "Sometimes it's a little nicer not needing to specify the datasource in your DB queries. When you have an application which mainly queries a single database, go ahead and set the default datasource - it's simple and saves you typing.",
 	"snippet": {
 		"type": "script",
-		"source": "// in Application.cfc...\r\n// datasource configuration\r\n this.datasources[\"myDB\"] = {\r\n\t// ...};\r\nthis.datasource = \"myDB\";\r\n//  you can now omit datasource settings from queryExecute() calls and <cfquery> tags.\r\nvar rows = queryExecute( \"SELECT * FROM pages\" );"
+		"source": "// in Application.cfc...\r\n// datasource configuration\r\n this.datasources[\"myDB\"] = {\r\n  // ...};\r\nthis.datasource = \"myDB\";\r\n//  you can now omit datasource settings from queryExecute() calls and <cfquery> tags.\r\nvar rows = queryExecute( \"SELECT * FROM pages\" );"
 	},
   "cheatsheets": [ "datasources", "queryexecute", "application.cfc" ]
 }

@@ -3,7 +3,7 @@
 	"description": "This configuration will ask the CFML engine to scan the specified directory every 30 seconds. Any jar files found will be loaded into the 'classpath' and accessible for use like any CFML component.",
 	"snippet": {
 		"type": "script",
-		"source": "\r\nthis.javaSettings = {\r\n\tloadPaths : \"./libs/jars\",\r\n\treloadOnChange : true,\r\n\twatchInterval : \"30\"\r\n};\r\n// in your app, you can now reference classes from the jar files located in /libs/jars\r\n// like JStrava: https://github.com/dustedrob/JStrava\r\nvar jStrava = new main.java.org.jstrava.api.JStravaV3();"
+		"source": "\r\nthis.javaSettings = {\r\n  loadPaths : \"./libs/jars\",\r\n  reloadOnChange : true,\r\n  watchInterval : \"30\"\r\n};\r\n// in your app, you can now reference classes from the jar files located in /libs/jars\r\n// like JStrava: https://github.com/dustedrob/JStrava\r\nvar jStrava = new main.java.org.jstrava.api.JStravaV3();"
 	},
   "cheatsheets": [ "java-integration", "application.cfc" ]
 }

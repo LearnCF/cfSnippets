@@ -3,7 +3,7 @@
 	"description": "If you do not have a default datasource configured, you'll need to use this variant to specify which datasource to use.",
 	"snippet": {
 		"type": "script",
-		"source": "var queryOptions = { datasource: \"appMain\" };\r\nvar data = queryExecute(\r\n\t\"SELECT * FROM users\", {}, queryOptions\r\n);"
+		"source": "var queryOptions = { datasource: \"appMain\" };\r\nvar data = queryExecute(\r\n  \"SELECT * FROM users\", {}, queryOptions\r\n);"
 	},
 	"cheatsheets": [ "queryexecute", "datasources" ]
 }
