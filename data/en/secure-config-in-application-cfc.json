@@ -1,0 +1,9 @@
+{
+  "title": "Lock down your app with security settings in Application.cfc",
+  "description": "There are a few security-related configuration settings in <code>Application.cfc</code> which you should consider enabling by default for every app you make. If you find a setting is too restrictive, you can always turn it off later.",
+	"snippet": {
+    "type": "script",
+		"source": "// Application.cfc\r\ncomponent {\r\n  this.name = \"myApp\";\r\n  // we don't need uploads in this app; why leave a possible open hole?\r\n  this.blockedExtForFileUpload = \"*\";\r\n  // easy first line of defense against scripts pasted into forms.\r\n  this.scriptProtect					 = \"all\";\r\n  // more secure session cookies\r\n  this.sessioncookie = {\r\n    httpOnly: true,\r\n    secure  : true\r\n  };\r\n}"
+	},
+  "cheatsheets": [ "application.cfc", "security" ]
+}

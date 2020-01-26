@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "var logDir = expandPath( \"/logs/\" );\r\nvar logs = directoryList(\r\n\tpath = logDir,\r\n\tlistInfo = \"name\",\r\n\tfilter = \"*.log\",\r\n\ttype = \"file\",\r\n\trecurse = \"false\"\r\n);\r\nfor( var log in logs ){\r\n\tvar fullPath = logDir & log ;\r\n\tif( fileExists( fullPath ) ){\r\n\t\tfileDelete( fullPath );\r\n\t}\r\n}"
 	},
-	"tags": ["fileDelete","expandPath","directoryList"]
+	"cheatsheets": [ "files" ]
 }

@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "var currentDateTime = now();\r\n// CF2016+ ONLY\r\n// Outputs 2020-01-12T16:22:19Z\r\nwriteDump( dateTimeFormat( currentDateTime, \"iso\" ) );\r\n// Lucee-ONLY\r\n// Outputs 2020-01-12T16:12:09+0000\r\nwriteDump( dateTimeFormat( currentDateTime, \"iso8601\" ) );\r\n// Supports Lucee and CF2016+\r\n// Outputs 2020-01-12T16:22:19Z\r\nwriteDump( dateTimeFormat( currentDateTime, \"YYYY-MM-DD'T'HH:NN:SSXXX\" ) );"
 	},
-	"tags": [ "datetime", "datetimeformat", "date", "time" ]
+	"cheatsheets": [ "dates" ]
 }

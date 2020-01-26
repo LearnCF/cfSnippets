@@ -1,0 +1,9 @@
+{
+  "title": "Enable and configure Hibernate ORM",
+  "description": "This basic ORM configuration should quickly get you going with ColdFusion's built-in Hibernate ORM.",
+	"snippet": {
+    "type": "script",
+		"source": "// Application.cfc\r\ncomponent {\r\n  this.ormEnabled = true;\r\n  this.ormSettings = {\r\n    // the datasource Hibernate will use to connect to the database.\r\n    datasource = \"mainDB\",\r\n    // helpful for development but NOT recommended for production!\r\n    logSQL = \"true\",\r\n    // make table updates on detecting changes to the ORM models.\r\n    // probably best to turn this off in prod and use cfmigrations or similar\r\n    // to manually handle the database updates.\r\n    dbcreate = \"update\",\r\n    // where to look for persistent models (aka ORM entities defined via CFML components)\r\n    cfclocation = [ \"models/orm/\", \"modules_app/admin/orm/\" ],\r\n    // what sort of database are you using?\r\n    dialect = \"MicrosoftSQLServer\"\r\n  };\r\n}"
+	},
+  "cheatsheets": [ "application.cfc", "orm" ]
+}

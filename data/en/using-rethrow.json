@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "// First level of error handling\r\n// Say, onError in Application.cfc\r\ntry {\r\n\t// somewhere in app-land...\r\n\ttry {\r\n\t\t// do something error-able\r\n\t\tx = 1 / 0;\r\n\t} catch( any e ) {\r\n\t\t// Recover so we don't bork the app\r\n\t\ttransactionRollback();\r\n\t\t// let the parent-level catch handle error logging.\r\n\t\trethrow();\r\n\t}\r\n} catch( any exception ) {\r\n\tcfparam( name=\"exception.message\", default=\"[no message]\" );\r\n\tcfparam( name=\"exception.detail\", default=\"[no detail]\" );\r\n\r\n\t// Log it with LogBox!\r\n\twriteOutput( \"Logging error with logbox...\" );\r\n\tlogger.error(\r\n\t\t\"Error in cfSnippets app: #exception.message# #exception.detail#\"\r\n\t\texception\r\n\t);\r\n}"
 	},
-	"tags": [ "rethrow", "cfcatch", "transactionrollback","errors", "cfparam" ]
+	"cheatsheets": [ "error-handling" ]
 }

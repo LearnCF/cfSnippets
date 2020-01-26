@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "var sql = \"SELECT * FROM users\";\r\nvar queryOptions = {\r\n\tcachedWithin: createTimespan( 0, 6, 0, 0 )\r\n};\r\nvar data = queryExecute( sql, params, queryOptions );"
 	},
-	"tags": [ "queryexecute", "cfquery", "caching", "cache" ]
+	"cheatsheets": [ "queryexecute", "caching", "performance" ]
 }

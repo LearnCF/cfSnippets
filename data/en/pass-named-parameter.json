@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "var params = {\r\n\tusername: { value: form.username, sqltype: \"varchar\" },\r\n\tpassword: { value: form.password, sqltype: \"varchar\" }\r\n};\r\nvar data = queryExecute(\r\n\t\"SELECT * FROM users WHERE username=:username AND password=:password\",\r\n\tparams\r\n);"
 	},
-	"tags": [ "queryexecute", "cfquery", "cfqueryparam" ]
+	"cheatsheets": [ "queryexecute" ]
 }

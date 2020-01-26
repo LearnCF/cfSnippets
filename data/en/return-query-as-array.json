@@ -5,5 +5,5 @@
         "type": "script",
         "source": "var usernames = queryExecute( \r\n\t\"SELECT id,name FROM users\",\r\n\t{},\r\n\t{ \"returntype\": \"array\" }\r\n);\r\n// Now we can use closures on the result\r\nvar newUsernames = usernames\r\n\t.filter( user => user.name CONTAINS \"Born\" )\r\n\t.each( user => user.name.replace( \"Born\", \"Bourne\" );"
     },
-    "tags": [ "queryexecute", "cfquery" ]
+    "cheatsheets": [ "queryexecute" ]
 }

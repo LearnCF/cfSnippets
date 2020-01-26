@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "dateTimeFormat(now(), \"YYYY-mm-dd HH:nn:ss XXX\")"
 	},
-	"tags": [ "datetimeformat" ]
+	"cheatsheets": [ "dates" ]
 }

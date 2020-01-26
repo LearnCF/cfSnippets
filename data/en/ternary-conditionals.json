@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "function buildURL(\r\n\trequired string to,\r\n\tstring querystring = \"\"\r\n) {\r\n\tvar protocol = cgi.https == \"on\" ? \"https\" : \"http\";\r\n\tvar querystring = arguments.querystring > \"\" ? \"?#arguments.querystring#\";\r\n\tvar port = listContains( \"80,443\", cgi.server_port ) ? \"\" : \":#cgi.server_port#\";\r\n\tvar domain = cgi.server_name;\r\n\treturn \"#protocol#://#domain##port##arguments.to##querystring#\";\r\n}"
 	},
-	"tags": [ "conditional", "ternary", "operator", "function" ]
+	"cheatsheets": [ "operator" ]
 }

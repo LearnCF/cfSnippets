@@ -1,9 +1,9 @@
 {
 	"title": "Use the Safe Navigation Operator",
-	"description": "The safe navigation operator is an awesome way to return a null instead of throwing an '[key] not exists' error when traversing a struct.",
+	"description": "The safe navigation operator is an awesome way to return a null instead of throwing a <code>[key] not exists</code> error when traversing a struct.",
 	"snippet": {
 		"type": "script",
 		"source": "/** \r\n * Returns the status code of the HTTP response.\r\n Will return null if no HTTP response yet.\r\n */\r\nfunction getStatusCode() {\r\n\treturn variables.httpResponse?.statusCode;\r\n}"
 	},
-	"tags": [ "null","operator" ]
+	"cheatsheets": [ "operators" ]
 }

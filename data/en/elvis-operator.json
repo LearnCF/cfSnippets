@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "// dumps the this scope, usually the executing component.\r\nwriteDump( this ?: \"that\" );\r\n// dumps \"that\" because this1 is null and undefined.\r\nwriteDump( this1 ?: \"that\" );"
 	},
-	"tags": [ "operator", "elvis" ]
+	"cheatsheets": [ "operators" ]
 }

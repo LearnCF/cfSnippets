@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "var createdDate = now();\r\n// Prints 09:58:05 -05:00\r\nwriteOutput( dateTimeFormat( createdDate, \"HH:nn:ss XXX\") );\r\n// Prints 10:58:05 -06:00\r\nwriteOutput( dateTimeFormat( createdDate, \"HH:nn:ss XXX\", \"America/Chicago\") );"
 	},
-	"tags": [ "datetime", "datetimeformat", "now", "timezone" ]
+	"cheatsheets": [ "dates", "localization" ]
 }

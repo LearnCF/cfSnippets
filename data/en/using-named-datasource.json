@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "var queryOptions = { datasource: \"appMain\" };\r\nvar data = queryExecute(\r\n\t\"SELECT * FROM users\", {}, queryOptions\r\n);"
 	},
-	"tags": [ "queryexecute", "cfquery" ]
+	"cheatsheets": [ "queryexecute", "datasources" ]
 }

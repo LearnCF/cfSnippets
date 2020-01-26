@@ -5,5 +5,5 @@
 		"type": "script",
 		"source": "var uploads = directoryList(\r\n\tpath = expandPath( \"./app/uploads/images\" ),\r\n\ttype = \"file\"\r\n);"
 	},
-	"tags": [ "directorylist", "files" ]
+	"cheatsheets": [ "files" ]
 }
