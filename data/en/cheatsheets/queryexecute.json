@@ -1,0 +1,4 @@
+{
+  "title": "QueryExecute()",
+  "description": "For modern CFML, use the script syntax. For querying your database in script, use <code>QueryExecute()</code>.</p><p><code>QueryExecute()</code> supports all the same options as the <code>cfquery</code> tag in a concise, script-friendly syntax."
+}

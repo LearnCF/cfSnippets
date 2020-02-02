@@ -1,0 +1,4 @@
+{
+  "title": "Application.cfc",
+  "description": "This configuration file allows you to manage security settings, mappings, datasources, sessions, ORM, and more at a directory-specific granularity."
+}

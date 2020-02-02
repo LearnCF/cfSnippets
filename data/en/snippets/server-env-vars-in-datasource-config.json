@@ -1,0 +1,9 @@
+{
+  "title": "Using Environment Variables in Datasource Configuration",
+  "description": "Use environment variables for datasource configuration using the <code>server.system.environment</code> struct of environment variables.",
+  "snippet": {
+    "type": "script",
+    "source": "this.datasources[\"myApp\"] = {\r\n  class: \"com.microsoft.sqlserver.jdbc.SQLServerDriver\"\r\n  , bundleName: \"mssqljdbc4\"\r\n  , bundleVersion: \"4.0.2206.100\"\r\n  , connectionString: \"jdbc:sqlserver://localhost:1433;DATABASENAME=#server.system.environment.DB_NAME#;sendStringParametersAsUnicode=true;SelectMethod=direct\"\r\n  , username: server.system.environment.DB_USER\r\n  , password: server.system.environment.DB_PASS\r\n};"
+  },
+  "cheatsheets": [ "datasources" ]
+}

@@ -1,5 +1,5 @@
 {
-  "title": "Lock down your app with security settings in Application.cfc",
+  "title": "Lock Down Your App with Application.cfc",
   "description": "There are a few security-related configuration settings in <code>Application.cfc</code> which you should consider enabling by default for every app you make. If you find a setting is too restrictive, you can always turn it off later.",
 	"snippet": {
     "type": "script",

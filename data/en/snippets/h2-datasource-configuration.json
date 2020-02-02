@@ -3,7 +3,7 @@
 	"description": "Connect to an H2 flat-file database from CFML by placing this datasource struct configuration in your <code>Application.cfc</code>.",
 	"snippet": {
 		"type": "script",
-		"source": "this.datasources[\"h2\"] = {\r\n  class: 'org.h2.Driver'\r\n  , bundleName: 'org.h2'\r\n  , connectionString: 'jdbc:h2:#expandPath(\"/db/h2db\")#;MODE=MySQL;'\r\n};"
+		"source": "this.datasources[\"h2\"] = {\r\n  class: \"org.h2.Driver\"\r\n  , bundleName: \"org.h2\"\r\n  , connectionString: \"jdbc:h2:#expandPath( '/db/h2db' )#;MODE=MySQL;\"\r\n};"
 	},
 	"cheatsheets": [ "datasources" ]
 }

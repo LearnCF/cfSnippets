@@ -1,0 +1,9 @@
+{
+	"title": "Microsoft SQL Server Datasource Configuration",
+	"description": "Connect to an MSSQL database from CFML by placing this datasource struct configuration in your <code>Application.cfc</code>.",
+	"snippet": {
+		"type": "script",
+		"source": "this.datasources[\"myApp\"] = {\r\n	class: \"com.microsoft.sqlserver.jdbc.SQLServerDriver\"\r\n, bundleName: \"mssqljdbc4\"\r\n, bundleVersion: \"4.0.2206.100\"\r\n, connectionString: \"jdbc:sqlserver://localhost:1433;DATABASENAME=app;sendStringParametersAsUnicode=true;SelectMethod=direct\"\r\n, username: \"admin\"\r\n, password: \"myPassword\"\r\n};"
+	},
+	"cheatsheets": [ "datasources" ]
+}

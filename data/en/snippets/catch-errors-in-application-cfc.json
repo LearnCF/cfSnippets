@@ -1,5 +1,5 @@
 {
-	"title": "Catching Application Errors in Application.cfc",
+	"title": "Global Error Logging from Application.cfc",
 	"description": "The <code>onError</code> function in <code>Application.cfc</code> is a great way to catch errors within your application and make sure that each error is logged. <strong>Be aware</strong> that if you catch an exception within your app, that exception will not \"bubble up\" to this <code>onError</code> handler unless you also use <code>rethrow</code>.",
 	"snippet": {
 		"type": "script",
