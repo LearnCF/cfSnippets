@@ -1,0 +1,4 @@
+{
+  "title": "Datasource Configuration",
+  "description": "CFML is <strong>really</strong> good at hooking up to a database. These datasource snippets should get you rolling with most CF-supported database platforms, from H2 to Postgres to Microsoft SQL Server."
+}
