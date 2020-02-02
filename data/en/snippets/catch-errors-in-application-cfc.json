@@ -3,7 +3,7 @@
 	"description": "The <code>onError</code> function in <code>Application.cfc</code> is a great way to catch errors within your application and make sure that each error is logged. <strong>Be aware</strong> that if you catch an exception within your app, that exception will not \"bubble up\" to this <code>onError</code> handler unless you also use <code>rethrow</code>.",
 	"snippet": {
 		"type": "script",
-		"source": "// Application.cfc\r\ncomponent {\r\n  // ...\r\n  function onError( exception ){\r\n    // log errors with logbox\r\n    // Log it with LogBox!\r\n    writeOutput( \"Logging error with logbox...\" );\r\n    logger.error(\r\n        \"Error in cfSnippets app: #exception.message# #exception.detail#\"\r\n        exception\r\n    );\r\n\r\n    // show error page\r\n    include \"views/error.cfm\";\r\n  }\r\n}"
+		"source": "// Application.cfc\r\ncomponent {\r\n  // ...\r\n  function onError( exception ){\r\n   // Log it with LogBox!\r\n    writeOutput( \"Logging error with logbox...\" );\r\n    logger.error(\r\n        \"Error in cfSnippets app: #exception.message# #exception.detail#\"\r\n        exception\r\n    );\r\n\r\n    // show error page\r\n    include \"views/error.cfm\";\r\n  }\r\n}"
 	},
   "cheatsheets": [ "error-handling","application.cfc" ]
 }

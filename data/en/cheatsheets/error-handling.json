@@ -1,0 +1,4 @@
+{
+  "title": "Error Handling in CFML",
+  "description": "Honestly, the simplistic it-just-works error handling in CFML is one of my favorite features of the language. With a three-part error handling strategy of 1. inline try-catch-rethrow, 2. application-level exception listener, and 3. LogBox for advanced email/file/console/database error logging, you really can't go wrong."
+}
