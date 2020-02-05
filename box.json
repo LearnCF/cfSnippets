@@ -1,0 +1,38 @@
+{
+    "author":"Michael Born <mike@learncf.dev>",
+    "name":"CFSnippets",
+    "private":false,
+    "projectURL":"https://cfsnippets.com/",
+    "bugs":"https://github.com/LearnCF/cfSnippets/issues",
+    "shortDescription":"CFML code examples written in modern script syntax.",
+    "slug":"cfsnippets",
+    "type":"modules",
+    "version":"1.0.0",
+    "dependencies":{},
+    "devDependencies":{},
+    "ignore":[
+        "**/.*",
+        "/test/",
+        "/tests/"
+    ],
+    "installPaths":{},
+    "keywords":[
+        "learnCF",
+        "learn",
+        "education"
+    ],
+    "license":[
+        {
+            "type":"BSD-3-Clause",
+            "URL":"https://opensource.org/licenses/BSD-3-Clause"
+        }
+    ],
+    "repository":{
+        "type":"vcs",
+        "URL":"https://github.com/LearnCF/cfSnippets"
+    },
+    "scripts":{
+        "postVersion":"package set location='https://github.com/LearnCF/`package show name`/archive/v`package version`.zip'",
+        "onRelease":"!git push --follow-tags"
+    }
+}
