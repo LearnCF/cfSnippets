@@ -7,7 +7,7 @@
     "shortDescription":"CFML code examples written in modern script syntax.",
     "slug":"cfsnippets",
     "type":"modules",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "dependencies":{},
     "devDependencies":{},
     "ignore":[
@@ -34,5 +34,6 @@
     "scripts":{
         "postVersion":"package set location='https://github.com/LearnCF/`package show name`/archive/v`package version`.zip'",
         "onRelease":"!git push --follow-tags"
-    }
+    },
+    "location":"https://github.com/LearnCF/CFSnippets/archive/v1.0.1.zip"
 }
