@@ -1,0 +1,10 @@
+{
+  "title": "Chain Catch Statements For Better Connectivity Error Handling",
+  "description": "You can chain multiple <code>catch</code> constructs together to catch and handle most database connectivity issues, while leaving generic exceptions like a syntax error to be caught and logged by a higher-level handler, such as <a href=\"https://cfsnippets.com/snippets/catch-errors-in-application-cfc\"><code>onError()</code> in Application.cfc</a>.",
+  "snippet": {
+    "type": "script",
+    "source": "try {\r\n  // try to create the `snippets` index... requires ElasticSearch to be up and running\r\n  getIndexBuilder().new( \"snippets\", myESMapping ).save();\r\n} catch( io.searchbox.client.config.exception.CouldNotConnectException exception ){\r\n  writeOutput( \"Unable to connect to ElasticSearch.\" );\r\n  abort;\r\n} catch( cbElasticsearch.JestClient.IndexCreationException exception ){\r\n  writeOutput( \"Could not create index.\" );\r\n  abort;\r\n}",
+    "syntax": "cfscript"
+  },
+  "cheatsheets": [ "error-handling" ]
+}
